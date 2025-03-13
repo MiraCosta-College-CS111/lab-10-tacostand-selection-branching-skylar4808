@@ -1,7 +1,7 @@
-// PARTNER NAME:
-// PARTNER NAME:
-// CS111 SECTION #:
-// DATE:
+// NAME: Skylar Hollingsworth
+// PARTNER NAME: None1
+// CS111 SECTION #: 1270
+// DATE: 3/12/2025
 
 public class Main
 {
@@ -67,8 +67,15 @@ public class Main
 		numTacosOrdered = UtilityBelt.readInt("Enter number of tacos you want> ", 1, 50);
 
 		//CALCULATION + OUTPUT SECTION
+		if (TacoStand.areTacosAvailable(option, numTacosOrdered)){
+		TacoStand.remainingTacos(option, numTacosOrdered);
 		TacoStand.updateTotalFunds(option, numTacosOrdered);
 		Main.printConfirmation(numTacosOrdered);
+		}
+		else{
+		System.out.println("We don't have that many tacos, sorry! Try again :(");
+		}
+
 	}
 
 	/**
@@ -79,6 +86,8 @@ public class Main
 	public static void printConfirmation(int numTacos) //TODO: upgrade per documentation
 	{
 		System.out.println("Here you go, buen provecho!");
-		System.out.println("🌮");
+		System.out.println("🌮".repeat(numTacos));
+		System.out.println("");
 	}
+
 }
