@@ -1,5 +1,5 @@
 // NAME: Skylar Hollingsworth
-// PARTNER NAME: None1
+// PARTNER NAME: None
 // CS111 SECTION #: 1270
 // DATE: 3/12/2025
 
