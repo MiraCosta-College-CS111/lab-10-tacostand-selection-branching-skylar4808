@@ -119,7 +119,6 @@ public class TacoStand
 		
 	}
 	
-	
 	/**
 	 * Determines if taco order can be fullfilled (number of tacos for specific kinda are available)
 	 * 
@@ -147,6 +146,12 @@ public class TacoStand
 		}
 	}
 
+	/**
+	 * Subtracts the tacos ordered from the number of tacos available
+	 * 
+	 * @param tacoOption menu option (kind of taco)
+	 * @param numTacos number of tacos as part of order
+	 */
 	public static void remainingTacos(int tacoOption, int numTacos)
 	{
 		if (tacoOption == 1){
